@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Resource | CampusBook</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                CampusBook
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="resources.html">Resources</a>
+                <a href="my-bookings.html">My Bookings</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- BOOKING PAGE -->
+
+    <main class="booking-container">
+
+        <section class="booking-heading">
+
+            <h1>Book Your Resource</h1>
+
+            <p>
+                Reserve your preferred campus facility.
+            </p>
+
+        </section>
+
+
+        <!-- SELECTED RESOURCE -->
+
+        <section class="selected-resource">
+
+            <h2>Selected Resource</h2>
+
+            <div id="resourceDetails">
+
+                <p>Loading resource information...</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOOKING FORM -->
+
+        <section class="booking-form-section">
+
+            <h2>Booking Details</h2>
+
+            <form id="bookingForm">
+
+                <!-- Resource -->
+
+                <div class="form-group">
+
+                    <label for="resourceSelect">
+                        Select Resource
+                    </label>
+
+                    <select id="resourceSelect" required>
+
+                        <option value="">
+                            Select a resource
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Student Name -->
+
+                <div class="form-group">
+
+                    <label for="studentName">
+                        Student Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Student ID -->
+
+                <div class="form-group">
+
+                    <label for="studentId">
+                        Student ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="studentId"
+                        placeholder="Enter your student ID"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="studentEmail">
+                        College Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="studentEmail"
+                        placeholder="Enter your college email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Date -->
+
+                <div class="form-group">
+
+                    <label for="bookingDate">
+                        Booking Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="bookingDate"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Start Time -->
+
+                <div class="form-group">
+
+                    <label for="startTime">
+                        Start Time
+                    </label>
+
+                    <input
+                        type="time"
+                        id="startTime"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- End Time -->
+
+                <div class="form-group">
+
+                    <label for="endTime">
+                        End Time
+                    </label>
+
+                    <input
+                        type="time"
+                        id="endTime"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Purpose -->
+
+                <div class="form-group">
+
+                    <label for="purpose">
+                        Purpose of Booking
+                    </label>
+
+                    <textarea
+                        id="purpose"
+                        rows="3"
+                        placeholder="Enter the purpose of your booking"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <button type="submit" class="btn">
+                    Confirm Booking
+                </button>
+
+
+                <!-- Message -->
+
+                <div id="bookingMessage"></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 CampusBook. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT FILES -->
+
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/timeutils.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/booking.js"></script>
+
+</body>
+
+</html>
