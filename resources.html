@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>     <meta charset="UTF-8">     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resources | CampusBook</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<main class="container">
+
+    <section class="resources-header">
+
+        <h1>Explore Campus Resources</h1>
+
+        <p>Find and book the facilities you need.</p>
+
+    </section>
+
+
+    <!-- Search and Filter -->
+<!-- Search and Filter -->
+
+<section class="resource-controls">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search resources..."
+    >
+
+    <select id="categoryFilter">
+
+        <option value="all">All Categories</option>
+
+        <option value="Group Discussion">
+            Group Discussion Rooms
+        </option>
+
+        <option value="Sports">
+            Sports Facilities
+        </option>
+
+    </select>
+
+</section>
+
+
+    <!-- Resource Cards -->
+
+    <section id="resourceGrid" class="resource-grid">
+
+    </section>
+
+</main>
+
+<div id="footer"></div>
+
+
+<!-- JavaScript Files -->
+
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/timeutils.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/resources.js"></script>
+
+</body>
+
+</html>
